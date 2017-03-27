@@ -54,6 +54,15 @@ var settings = module.exports = {
     storageModule: require("./couchstorage")
 }
 
+console.log("HOME = " + process.env.HOME);
+console.log("PATH = " + process.env.PATH);
+console.log("VCAP_SERVICES = " + process.env.VCAP_SERVICES);
+console.log("VCAP_APP_PORT = " + process.env.VCAP_APP_PORT);
+console.log("PWD = " + process.env.PWD);
+console.log("MEMORY_LIMIT = " + process.env.MEMORY_LIMIT);
+console.log("USER = " + process.env.USER);
+console.log("PORT = " + process.env.PORT);
+
 if (process.env.NODE_RED_USERNAME && process.env.NODE_RED_PASSWORD) {
     settings.adminAuth = {
         type: "credentials",
